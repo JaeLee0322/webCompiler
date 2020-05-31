@@ -1,0 +1,79 @@
+.main-icon {
+	height: 30px;
+	vertical-align: middle;
+}
+
+.navbar-buttons {
+	vertical-align: sub;
+	color: #000000;
+}
+
+.navbar-nav li {
+	display: inline;
+	color: white;
+}
+
+.navbar-header {
+	color: white;
+}
+
+
+/* Text Editor */
+.CodeMirror { border: 1px solid silver; }
+.CodeMirror-empty { outline: 1px solid #c22; }
+.CodeMirror-empty.CodeMirror-focused { outline: none; }
+.CodeMirror pre.CodeMirror-placeholder { color: #999; }
+
+/* Sidebar */
+.side-nav {
+	height: 100%;
+	width: 0px;
+	position: fixed;
+	z-index: 0;
+	top: 60px;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px; 
+}
+.side-nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.side-nav a:hover {
+  color: #f1f1f1;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 2px;
+  /*columns: 2;*/
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-height: 450px) {
+  .side-nav {padding-top: 15px;}
+  .side-nav a {font-size: 18px;}
+}
+
+/* Split Screen */
+.leftside, .rightside {
+	height: 50vh;
+	width: 100%;
+	outline: 3px solid #404040;
+}
+.leftside {
+	background: #333;
+}
+.rightside {
+	background: #333;
+}
+@media screen and (min-width: 768px) {
+	.leftside, .rightside {
+		height: 100vh;
+	}
+}
